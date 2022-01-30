@@ -1,0 +1,40 @@
+{
+  "name": "arprocedurecreation",
+  "version": "1.0.0",
+  "description": "ARProcedures app node",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --port 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciaranm758/ARProcedureCreation.git"
+  },
+  "keywords": [
+    "AR",
+    "Node",
+    "Babylon"
+  ],
+  "author": "Ciarán Mooney",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ciaranm758/ARProcedureCreation/issues"
+  },
+  "homepage": "https://github.com/ciaranm758/ARProcedureCreation#readme",
+  "dependencies": {
+    "@babylonjs/core": "^4.2.1",
+    "@babylonjs/gui": "^4.2.1",
+    "@babylonjs/loaders": "^4.2.1"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "source-map-loader": "^3.0.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
+  }
+}
