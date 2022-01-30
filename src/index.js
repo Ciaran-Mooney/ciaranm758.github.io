@@ -9,43 +9,6 @@ import latteModel from "../assets/Latte.glb";
 const canvas = document.getElementById('renderCanvas');
 canvas.classList.add('WidthHeightFull');
 
-//TODO : GROQ url query https://tzv81qob.api.sanity.io/v1/data/query/production?query=*%5B_type%20%3D%3D%20'movie'%5D%20
-// If receiving CORS error from Sanity - add dev hosted url to sanity with CLI e.g: Sanity cors add http://localhost:8080/
-async function testRequestCall(url) {
-    return await fetch(url);
-}
-
-async function testGROQ() {
-    testRequestCall("https://tzv81qob.api.sanity.io/v1/data/query/production?query=*%5B_type%20%3D%3D%20'movie'%5D%20")
-        .then(result => console.log(result));
-}
-
-// 3D UI
-// https://playground.babylonjs.com/#8Y780Y#20
-function create3DUI() {
-    var manager = new GUI.GUI3DManager(scene);
-    var anchor = new TransformNode("");
-
-    var panel = new GUI.CylinderPanel();
-    panel.margin = 0.2;
-
-    manager.addControl(panel);
-    panel.linkToTransformNode(anchor);
-    panel.position.z = -1.5;
-
-    var addButton = function () {
-        var button = new GUI.HolographicButton("orientation");
-        panel.addControl(button);
-        button.text = "Button #" + panel.children.length;
-    }
-
-    panel.blockLayout = true;
-    for (var index = 0; index < 60; index++) {
-        addButton();    
-    }
-    panel.blockLayout = false;
-}
-
 // 2D UI
 function create2DUI() {
     var advancedTexture = GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
