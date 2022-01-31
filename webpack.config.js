@@ -36,7 +36,7 @@ module.exports = {
                 use: 'source-map-loader',
             },
             {
-                test: /\.(png|jpg|gif|env|glb|gltf|stl)$/i,
+                test: /\.(png|jpg|gif|env|glb|gltf|stl|obj|mtl)$/i,
                 use: [
                     {
                         loader: "url-loader",
