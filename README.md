@@ -1,2 +1,2 @@
-# ARProcedureCreation
-Create Augmented Reality procedures. Web/Mobile app using BabylonJs and Sanity. 
+
+Display a model using BabylonJS

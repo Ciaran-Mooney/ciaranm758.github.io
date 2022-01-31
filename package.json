@@ -1,7 +1,7 @@
 {
-  "name": "arprocedurecreation",
+  "name": "modelviewer",
   "version": "1.0.0",
-  "description": "ARProcedures app node",
+  "description": "Model Viewer app node",
   "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,19 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ciaranm758/ARProcedureCreation.git"
+    "url": "git+http://git.imr.loc/xr/other/modelviewer.git"
   },
   "keywords": [
-    "AR",
     "Node",
-    "Babylon"
+    "BabylonJS"
   ],
   "author": "Ciarán Mooney",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ciaranm758/ARProcedureCreation/issues"
-  },
-  "homepage": "https://github.com/ciaranm758/ARProcedureCreation#readme",
   "dependencies": {
     "@babylonjs/core": "^4.2.1",
     "@babylonjs/gui": "^4.2.1",
